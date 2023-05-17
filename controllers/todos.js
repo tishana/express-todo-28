@@ -10,6 +10,7 @@ router.get('/', (req, res)=>{
     })
 });
 // New - Will be handled by React application
+
 // Delete
 router.delete('/:id', (req, res)=>{
     Todos.findByIdAndRemove(req.params.id, (err, deletedTodo)=>{
@@ -29,6 +30,7 @@ router.post('/', (req, res)=>{
     })
 })
 // Edit - Will be handled by React application
+
 // Show
 router.get('/:id', (req, res)=>{
     Todos.findById(req.params.id, (err, foundTodo)=>{
